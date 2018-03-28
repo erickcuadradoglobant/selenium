@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [My test suite]">
-  <parameter name="stringA" value="I love "/>
-  <parameter name="stringB" value="test automation"/>
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="com.cuadrado.training.MyCoolListener"/>
+    <listener class-name="com.cuadrado.starbucks.training.MyCoolListener"/>
   </listeners>
   <test name="My first test(failed)">
-    <groups>
-      <run>
-        <exclude name="grupo1"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.cuadrado.starbucks.Test.StarbucksTests">
         <methods>

@@ -58,14 +58,11 @@ public class StarbucksHomePage extends BasePage{
 	private WebElement cards;
 	
 	
-	public WebElement[] menu() {
-	receivedlists = null;
-	
+	public void menu() {
+	receivedlists = null;	
 	WebElement menuoptions[] = {coffee, tea, menu, coffehouse, socialImpact, rewards, blog, cards};
 	//System.out.println();
 	expectedList2 = Arrays.asList(coffee.getText().toString(), tea.getText().toString(),menu.getText().toString(), coffehouse.getText().toString(), socialImpact.getText().toString(), rewards.getText().toString(), blog.getText().toString(), cards.getText().toString());
-	
-	
 	for(int i=0; i<menuoptions.length; i++) {
 		//String aux = null;
 		//aux = menuoptions[i].getText();
@@ -73,28 +70,25 @@ public class StarbucksHomePage extends BasePage{
 		System.out.print(menuoptions[i].getText()+ " ");
 		assertEquals(receivedList[i], menuoptions[i].getText(), "Paso los Strings");
 		assertEquals(receivedList2.get(i), expectedList2.get(i), "Paso con Lista");
-		
 	}
 	//assertEquals(receivedlists, expectedlist);
-	return menuoptions;
 	}
 	
 
-	public String secondEx() {
+	public void secondEx() {
 		String second = null;
 		coffee.click();
 		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menu_coffee\"]/div[1]/ol/li[2]/p/a")));
 		WebElement findcoffee = getDriver().findElement(By.xpath("//*[@id=\"menu_coffee\"]/div[1]/ol/li[2]/p/a"));
 		findcoffee.click();
-		//firstoption();
+		ejercicio2parte1();
 		ejercicio2parte2(1, 1, 2, 2);
 		second = "prueba  terminada";
 		System.out.println(second);
-		return second;
 	}
 
-	public void firstoption() {
+	public void ejercicio2parte1() {
 		//Encuentra y da click en en la opción 1
 		WebElement option1 = getDriver().findElement(By.id("question1"));
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[data-event=\"Lighthearted and sunny\"]")));
