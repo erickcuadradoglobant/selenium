@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-import com.cuadrado.pages.BasePage;
+import com.cuadrado.starbucks.pages.BasePage;
 
 
 
@@ -80,10 +80,6 @@ public class StarbucksHomePage extends BasePage{
 	}
 	
 
-	
-	
-	
-
 	public String secondEx() {
 		String second = null;
 		coffee.click();
@@ -103,7 +99,7 @@ public class StarbucksHomePage extends BasePage{
 		WebElement option1 = getDriver().findElement(By.id("question1"));
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[data-event=\"Lighthearted and sunny\"]")));
 		WebElement option1chossen = option1.findElement(By.cssSelector("button[data-event=\"Lighthearted and sunny\"]"));
-		option1chossen.click();
+		option1chossen.click(); 
 		//Encuentra y da click en en la opción 2
 		WebElement option2 = getDriver().findElement(By.id("question2"));
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[data-event=\"Lighthearted and sunny\"]")));
@@ -138,29 +134,39 @@ public class StarbucksHomePage extends BasePage{
 		option1.get(opt1).click();
 		List<WebElement> option2 = getDriver().findElement(By.id("question2")).findElements(By.tagName("button"));
 		option2.get(opt2).click();
+		WebElement auxoption3;
+		if(opt3==1) {
+			new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.id("question3")));
+			auxoption3 =getDriver().findElement(By.id("question3"));
+			auxoption3 = auxoption3.findElement(By.id("light-questions"));
+			List<WebElement> option3 = auxoption3.findElements(By.tagName("button"));
+			option3.get(opt3).click();
+		}
+		if(opt3==2) {
+			List<WebElement> option3 = getDriver().findElement(By.id("question3")).findElement(By.id("medium-questions")).findElements(By.tagName("button"));
+			option3.get(opt3).click();
+		}
+		if(opt3==3) {
+			List<WebElement> option3 = getDriver().findElement(By.id("question3")).findElement(By.id("dark-questions")).findElements(By.tagName("button"));
+			option3.get(opt3).click();
+		}
+		List<WebElement> option4 = getDriver().findElement(By.id("question4")).findElements(By.tagName("button"));
+		option4.get(opt4).click();
+		//new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.id("button#find-my-coffee"))).click();
+		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.id("find-my-coffee"))).click();
+		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[data-event=\"find-my-coffee\"]"))).click();
 		
+		WebElement botonfindcoffee = getDriver().findElement(By.cssSelector("button[data-event=\"find-my-coffee\"]"));
+		botonfindcoffee.click();
+		
+		//Valida que la pagina desplegada sea correcta
+		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.id("all-results-headings")));
+		boolean checkresult = getDriver().findElement(By.id("all-results-headings")).isDisplayed();
+		Assert.assertEquals(true, checkresult);
 		//WebElement option2 = option1.findElement(By.)
 
 	}
 	
-	@DataProvider(name="secondoption")
-	public void secondOption(int opt2, int opt3) {
-		WebElement option2 = getDriver().findElement(By.id("question2"));
-		WebElement option3 = getDriver().findElement(By.id("question3"));
-		switch (opt2) {
-		case 1:
-			
-			break;
-		case 2:
-		
-			break;
-		case 3:
-			
-			break;
-		}
-		
-		
-		
-	}
+	
 	
 }

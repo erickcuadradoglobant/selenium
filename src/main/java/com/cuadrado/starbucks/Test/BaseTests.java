@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.cuadrado.starbucks.pages.StarbucksHomePage;
-import com.cuadrado.training.MyDriver;
+import com.cuadrado.starbucks.training.MyDriver;
 
 public class BaseTests {
 	
