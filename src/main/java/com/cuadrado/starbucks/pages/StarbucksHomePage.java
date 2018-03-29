@@ -2,7 +2,7 @@ package com.cuadrado.starbucks.pages;
 
 import static org.testng.Assert.assertEquals;
 
-
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -20,6 +20,8 @@ import java.util.List;
 
 
 import com.cuadrado.starbucks.pages.BasePage;
+
+import net.bytebuddy.utility.RandomString;
 
 
 
@@ -161,6 +163,39 @@ public class StarbucksHomePage extends BasePage{
 
 	}
 	
+	public void thirdEx() {
+		cards.click();
+		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menu_gift_cards\"]/div[1]/ol/li[1]/ol/li[1]/a")));
+		WebElement giftcardoptions = getDriver().findElement(By.xpath("//*[@id=\"menu_gift_cards\"]/div[1]/ol/li[1]/ol/li[1]/a"));
+		giftcardoptions.click();
+		WebElement giftcardselected = getDriver().findElement(By.xpath("//*[@id=\"egift-categories\"]/li[1]/a/img"));
+		giftcardselected.click();
+		
+		String rec= "lalalala";
+		String mes= "lorem";
+		String nam= "fulanito";
+		String mail = nam + "@"+rec+".com";
+		String mail2 = rec + "@"+nam+".com";
+
+		
+		getDriver().findElement(By.id("recipient_name")).sendKeys(rec);
+		getDriver().findElement(By.id("message")).sendKeys(mes);
+		getDriver().findElement(By.id("sender_name")).sendKeys(nam);
+		getDriver().findElement(By.id("recipient_email")).sendKeys(mail); 
+		getDriver().findElement(By.id("sender_email")).sendKeys(mail2);
+		getDriver().findElement(By.id("delivery_date")).clear();
+		getDriver().findElement(By.id("delivery_date")).sendKeys("4/28/2018");
+		getDriver().findElement(By.className("action")).click();
+		
+		List<WebElement> result = getDriver().findElement(By.className("odd")).findElements(By.tagName("td"));
+		WebElement recipientreceived = result.get(2);
+		WebElement amountreceived = result.get(3);
+		WebElement daterecieved = result.get(4);
+		WebElement namereceived = result.get(6);
+		
+		System.out.print(recipientreceived.toString()+amountreceived.toString()+daterecieved.toString()+namereceived.toString());
+	}
 	
 	
 }

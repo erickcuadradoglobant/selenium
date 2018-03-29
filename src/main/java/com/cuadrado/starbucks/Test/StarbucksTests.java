@@ -12,8 +12,8 @@ public class StarbucksTests extends BaseTests{
 	public void testStarbucks() {
 		StarbucksHomePage home = getStarbucksHomePage();
 		//home.menu();
-		home.secondEx();
-		
+		//home.secondEx();
+		home.thirdEx();
 		
 	}
 
