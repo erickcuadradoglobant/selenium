@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My test suite" duration-ms="9758" started-at="2018-04-02T17:16:02Z" finished-at="2018-04-02T17:16:11Z">
+    <groups>
+    </groups>
+    <test name="My first test" duration-ms="9758" started-at="2018-04-02T17:16:02Z" finished-at="2018-04-02T17:16:11Z">
+      <class name="com.cuadrado.starbucks.Test.StarbucksTests">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@66d33a]" name="beforeSuite" is-config="true" duration-ms="7915" started-at="2018-04-02T12:15:54Z" finished-at="2018-04-02T12:16:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="testStarbucks()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@66d33a]" name="testStarbucks" duration-ms="9752" started-at="2018-04-02T12:16:02Z" finished-at="2018-04-02T12:16:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStarbucks -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@66d33a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-04-02T12:16:11Z" finished-at="2018-04-02T12:16:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.cuadrado.starbucks.Test.StarbucksTests -->
+    </test> <!-- My first test -->
+  </suite> <!-- My test suite -->
+</testng-results>

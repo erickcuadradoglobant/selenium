@@ -59,7 +59,7 @@ public class StarbucksHomePage extends BasePage{
 	@FindBy(xpath="//*[@id=\"nav_gift_cards\"]/a/strong")
 	private WebElement cards;
 	
-	
+	//Primer Ejercicio 
 	public void menu() {
 	receivedlists = null;	
 	WebElement menuoptions[] = {coffee, tea, menu, coffehouse, socialImpact, rewards, blog, cards};
@@ -76,7 +76,7 @@ public class StarbucksHomePage extends BasePage{
 	//assertEquals(receivedlists, expectedlist);
 	}
 	
-
+	//Segundo ejercicio 
 	public void secondEx() {
 		String second = null;
 		coffee.click();
@@ -89,7 +89,7 @@ public class StarbucksHomePage extends BasePage{
 		second = "prueba  terminada";
 		System.out.println(second);
 	}
-
+	
 	public void ejercicio2parte1() {
 		//Encuentra y da click en en la opción 1
 		WebElement option1 = getDriver().findElement(By.id("question1"));
@@ -163,13 +163,14 @@ public class StarbucksHomePage extends BasePage{
 
 	}
 	
+	//Tercer Ejercicio
 	public void thirdEx() {
 		cards.click();
 		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menu_gift_cards\"]/div[1]/ol/li[1]/ol/li[1]/a")));
 		WebElement giftcardoptions = getDriver().findElement(By.xpath("//*[@id=\"menu_gift_cards\"]/div[1]/ol/li[1]/ol/li[1]/a"));
 		giftcardoptions.click();
-		WebElement giftcardselected = getDriver().findElement(By.xpath("//*[@id=\"egift-categories\"]/li[1]/a/img"));
+		WebElement giftcardselected = getDriver().findElement(By.xpath("//*[@id=\"egift-categories\"]/li[1]/a"));
 		giftcardselected.click();
 		
 		String rec= "destinatario";
