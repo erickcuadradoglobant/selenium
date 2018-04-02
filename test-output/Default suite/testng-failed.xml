@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.cuadrado.tests.WikiTests">
+      <class name="com.cuadrado.starbucks.Test.StarbucksTests">
         <methods>
           <include name="afterSuite"/>
-          <include name="testWikiSearch"/>
+          <include name="testStarbucks"/>
         </methods>
-      </class> <!-- com.cuadrado.tests.WikiTests -->
+      </class> <!-- com.cuadrado.starbucks.Test.StarbucksTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
