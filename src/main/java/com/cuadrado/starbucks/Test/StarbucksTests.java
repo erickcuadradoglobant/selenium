@@ -14,14 +14,14 @@ public class StarbucksTests extends BaseTests{
 		StarbucksHomePage home = getStarbucksHomePage();
 		
 		
-		//home.menu();
+		home.menu();
 		//home.secondEx();
 		home.menu();
 		FindCoffeePage coffee = getFindCoffeePage();
-		//coffee.secondEx();
+		coffee.secondEx();
 		//coffee.dispose();
 		GiftCardPage card = getGiftCardPAge();
-		card.thirdEx();
+		//card.thirdEx();
 		
 	}
 
