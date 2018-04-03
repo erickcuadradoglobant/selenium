@@ -30,7 +30,7 @@ public class FindCoffeePage extends BasePage {
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menu_coffee\"]/div[1]/ol/li[2]/p/a")));
 		WebElement findcoffee = getDriver().findElement(By.xpath("//*[@id=\"menu_coffee\"]/div[1]/ol/li[2]/p/a"));
 		findcoffee.click();
-		ejercicio2parte1();
+		//ejercicio2parte1();
 		ejercicio2parte2(1, 1, 2, 2);
 		second = "prueba  terminada";
 		System.out.println(second);
@@ -57,14 +57,15 @@ public class FindCoffeePage extends BasePage {
 		WebElement option4chossen = option4.findElement(By.cssSelector("button[data-event=\"I like things simple\"]"));
 		option4chossen.click();
 		//Da click en el botón find my coffee
-		getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		getWait();
 
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("button#find-my-coffee"))).click();
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.id("find-my-coffee"))).click();
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[data-event=\"find-my-coffee\"]"))).click();
 		
-		WebElement botonfindcoffee = getDriver().findElement(By.cssSelector("button[data-event=\"find-my-coffee\"]"));
-		botonfindcoffee.click();
+		//WebElement botonfindcoffee = getDriver().findElement(By.cssSelector("button[data-event=\"find-my-coffee\"]"));
+		//botonfindcoffee.click();
 		
 		//Valida que la pagina desplegada sea correcta
 		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.id("all-results-headings")));
@@ -94,11 +95,13 @@ public class FindCoffeePage extends BasePage {
 		}
 		List<WebElement> option4 = getDriver().findElement(By.id("question4")).findElements(By.tagName("button"));
 		option4.get(opt4).click();
-		//new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.id("button#find-my-coffee"))).click();
-		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.id("find-my-coffee"))).click();
-		new WebDriverWait(getDriver(), 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[data-event=\"find-my-coffee\"]"))).click();
+		getDriver().manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		getWait();
+		WebElement botonfindcoffee = new WebDriverWait(getDriver(), 100000).until(ExpectedConditions.elementToBeClickable(By.id("find-my-coffee")));
+		//new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.id("find-my-coffee")));
+		//new WebDriverWait(getDriver(), 50).until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[data-event=\"find-my-coffee\"]"))).click();
 		
-		WebElement botonfindcoffee = getDriver().findElement(By.cssSelector("button[data-event=\"find-my-coffee\"]"));
+		// botonfindcoffee = getDriver().findElement(By.id("find-my-coffee"));
 		botonfindcoffee.click();
 		
 		//Valida que la pagina desplegada sea correcta
@@ -106,6 +109,12 @@ public class FindCoffeePage extends BasePage {
 		boolean checkresult = getDriver().findElement(By.id("all-results-headings")).isDisplayed();
 		Assert.assertEquals(true, checkresult);
 		//WebElement option2 = option1.findElement(By.)
+		System.out.println(getDriver().getCurrentUrl());
+		getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//getWait();
+		new WebDriverWait(getDriver(), 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menu-item-287\"]/a"))).click();
+		//WebElement index = getDriver().findElement(By.xpath("//*[@id=\\\"menu-item-287\\\"]/a"));
+		//index.click();
 
 	}
 

@@ -1,94 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="5215" started-at="2018-04-02T18:12:02Z" finished-at="2018-04-02T18:12:07Z">
+  <suite name="My test suite" duration-ms="7908" started-at="2018-04-02T23:51:37Z" finished-at="2018-04-02T23:51:45Z">
     <groups>
     </groups>
-    <test name="My first test" duration-ms="5215" started-at="2018-04-02T18:12:02Z" finished-at="2018-04-02T18:12:07Z">
+    <test name="My first test" duration-ms="7908" started-at="2018-04-02T23:51:37Z" finished-at="2018-04-02T23:51:45Z">
       <class name="com.cuadrado.starbucks.Test.StarbucksTests">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@4cc0edeb]" name="beforeSuite" is-config="true" duration-ms="6431" started-at="2018-04-02T13:11:55Z" finished-at="2018-04-02T13:12:02Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@4cc0edeb]" name="beforeSuite" is-config="true" duration-ms="6980" started-at="2018-04-02T18:51:30Z" finished-at="2018-04-02T18:51:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="testStarbucks()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@4cc0edeb]" name="testStarbucks" duration-ms="5200" started-at="2018-04-02T13:12:02Z" finished-at="2018-04-02T13:12:07Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <button id="find-my-coffee" data-event="find-my-coffee" tabindex="0" target="_blank" class="btn btn-solid" role="button" title="...s">Find my coffee</button> is not clickable at point (508, 414). Other element would receive the click: <div id="content" class="site-content">...</div>
-  (Session info: chrome=65.0.3325.181)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'MX-IT01127', ip: '10.230.6.126', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\ERICK~1.CUA\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-Session ID: 61d05eabaee8f9aa681fd0759f75609f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button id="find-my-coffee" data-event="find-my-coffee" tabindex="0" target="_blank" class="btn btn-solid" role="button" title="...s">Find my coffee</button> is not clickable at point (508, 414). Other element would receive the click: <div id="content" class="site-content">...</div>
-  (Session info: chrome=65.0.3325.181)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'MX-IT01127', ip: '10.230.6.126', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\ERICK~1.CUA\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-Session ID: 61d05eabaee8f9aa681fd0759f75609f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.cuadrado.starbucks.pages.FindCoffeePage.ejercicio2parte1(FindCoffeePage.java:63)
-	at com.cuadrado.starbucks.pages.FindCoffeePage.secondEx(FindCoffeePage.java:33)
-	at com.cuadrado.starbucks.Test.StarbucksTests.testStarbucks(StarbucksTests.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="testStarbucks()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@4cc0edeb]" name="testStarbucks" duration-ms="7895" started-at="2018-04-02T18:51:37Z" finished-at="2018-04-02T18:51:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStarbucks -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@4cc0edeb]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-04-02T13:12:07Z" finished-at="2018-04-02T13:12:07Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@4cc0edeb]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-04-02T18:51:45Z" finished-at="2018-04-02T18:51:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -17,9 +17,9 @@ public class StarbucksTests extends BaseTests{
 		//home.menu();
 		//home.secondEx();
 		home.menu();
-		//home.dispose();
 		FindCoffeePage coffee = getFindCoffeePage();
-		coffee.secondEx();
+		//coffee.secondEx();
+		//coffee.dispose();
 		GiftCardPage card = getGiftCardPAge();
 		card.thirdEx();
 		

@@ -18,7 +18,7 @@ public class MyDriver {
 				e.printStackTrace();
 			}*/
 			case "firefox" :
-				System.setProperty("webdriver.gecko.driver","C:\\Users\\erick.cuadrado\\Documents\\gecko\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver","geckodriver.exe");
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":

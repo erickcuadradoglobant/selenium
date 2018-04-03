@@ -16,10 +16,13 @@ public class GiftCardPage extends BasePage {
 		super(driver);
 		driver.get("https://www.starbucks.com/");
 	}
-	@FindBy(xpath="//*[@id=\"nav_gift_cards\"]/a/strong")
-	private WebElement cards;
+	//@FindBy(xpath="//*[@id=\"nav_gift_cards\"]/a/strong")
+	//private WebElement cards;
+	//@FindBy(xpath="//*[@id=\"menu-item-287\"]/a")
+	//private WebElement index;
 	//Tercer Ejercicio
 		public void thirdEx() {
+			WebElement cards = getDriver().findElement(By.xpath("//*[@id=\"nav_gift_cards\"]/a/strong"));
 			cards.click();
 			getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			new WebDriverWait(getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"menu_gift_cards\"]/div[1]/ol/li[1]/ol/li[1]/a")));
