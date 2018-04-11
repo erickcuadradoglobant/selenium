@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="8265" started-at="2018-04-03T17:03:11Z" finished-at="2018-04-03T17:03:19Z">
+  <suite name="My test suite" duration-ms="164" started-at="2018-04-11T20:49:07Z" finished-at="2018-04-11T20:49:07Z">
     <groups>
     </groups>
-    <test name="My first test" duration-ms="8265" started-at="2018-04-03T17:03:11Z" finished-at="2018-04-03T17:03:19Z">
+    <test name="My first test" duration-ms="164" started-at="2018-04-11T20:49:07Z" finished-at="2018-04-11T20:49:07Z">
       <class name="com.cuadrado.starbucks.Test.StarbucksTests">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@66d33a]" name="beforeSuite" is-config="true" duration-ms="9493" started-at="2018-04-03T12:03:02Z" finished-at="2018-04-03T12:03:11Z">
+        <test-method status="PASS" signature="beforeSuite(int)[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@17f6480]" name="beforeSuite" is-config="true" duration-ms="9361" started-at="2018-04-11T15:48:58Z" finished-at="2018-04-11T15:49:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="testStarbucks()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@66d33a]" name="testStarbucks" duration-ms="8255" started-at="2018-04-03T12:03:11Z" finished-at="2018-04-03T12:03:19Z">
+        <test-method status="PASS" signature="testStarbucks()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@17f6480]" name="testStarbucks" duration-ms="154" started-at="2018-04-11T15:49:07Z" finished-at="2018-04-11T15:49:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStarbucks -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@66d33a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-04-03T12:03:19Z" finished-at="2018-04-03T12:03:19Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cuadrado.starbucks.Test.StarbucksTests@17f6480]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-04-11T15:49:07Z" finished-at="2018-04-11T15:49:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

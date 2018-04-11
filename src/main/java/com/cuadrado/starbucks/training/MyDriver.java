@@ -9,7 +9,7 @@ public class MyDriver {
 	
 	private WebDriver driver;
 	
-	public MyDriver(String browser) {
+	public MyDriver(int browser) {
 		switch(browser) {
 		/*case "remoteFirefox":
 			try {
@@ -17,11 +17,11 @@ public class MyDriver {
 			}catch(MalformedURLException e) {
 				e.printStackTrace();
 			}*/
-			case "firefox" :
+			case 1 :
 				System.setProperty("webdriver.gecko.driver","geckodriver.exe");
 				driver = new FirefoxDriver();
 				break;
-			case "chrome":
+			case 2:
 				System.setProperty("webdriver.chrome.driver","C:\\Users\\erick.cuadrado\\Documents\\chromedriver.exe");
 				driver = new ChromeDriver();
 				break;

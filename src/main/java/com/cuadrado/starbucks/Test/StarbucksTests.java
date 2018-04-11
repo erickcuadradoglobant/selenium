@@ -1,5 +1,6 @@
 package com.cuadrado.starbucks.Test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.cuadrado.starbucks.pages.FindCoffeePage;
@@ -8,17 +9,17 @@ import com.cuadrado.starbucks.pages.StarbucksHomePage;
 
 
 public class StarbucksTests extends BaseTests{
+	String originalList[]= {"COFFEE", "TEA", "MENU", "COFFEEHOUSE", "SOCIAL IMPACT", "STARBUCKS REWARDS", "BLOG", "GIFT CARDS"};
 
 	@Test
-	public void testStarbucks() {
-		StarbucksHomePage home = getStarbucksHomePage();
-		
-		
-		home.menu();
+	public void testStarbucks() { 
+		String received[] = {};
+		StarbucksHomePage home = getStarbucksHomePage();		
+		received = home.menu();
+		Assert.assertEquals(received, originalList, "Pasó los Strings");
 		//home.secondEx();
-		home.menu();
 		FindCoffeePage coffee = getFindCoffeePage();
-		coffee.secondEx();
+		//coffee.secondEx();
 		//coffee.dispose();
 		GiftCardPage card = getGiftCardPAge();
 		//card.thirdEx();

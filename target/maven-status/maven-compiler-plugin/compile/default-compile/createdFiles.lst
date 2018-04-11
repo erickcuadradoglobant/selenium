@@ -1,0 +1,9 @@
+com\cuadrado\starbucks\pages\FindCoffeePage.class
+com\cuadrado\starbucks\training\MyCoolListener.class
+com\cuadrado\starbucks\training\MyDriver.class
+com\cuadrado\starbucks\pages\StarbucksHomePage.class
+com\cuadrado\starbucks\pages\BasePage.class
+com\cuadrado\starbucks\pages\GiftCardPage.class
+com\cuadrado\starbucks\pages\ArticlePage.class
+com\cuadrado\starbucks\Test\BaseTests.class
+com\cuadrado\starbucks\Test\StarbucksTests.class

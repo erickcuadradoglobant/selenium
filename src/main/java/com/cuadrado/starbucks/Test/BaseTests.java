@@ -19,7 +19,7 @@ public class BaseTests {
 	
 	@BeforeSuite(alwaysRun=true)
 	@Parameters({"browser"})
-	public void beforeSuite(String browser) {
+	public void beforeSuite(int browser) {
 		myDriver = new MyDriver(browser);
 		starbucksHome = new StarbucksHomePage(myDriver.getDriver());
 		findCoffee =new FindCoffeePage(myDriver.getDriver());

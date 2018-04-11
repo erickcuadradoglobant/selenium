@@ -3,7 +3,7 @@
 <listeners>
 	<listener class-name="com.cuadrado.starbucks.training.MyCoolListener"></listener>
 </listeners>
-<parameter name="browser" value="firefox"/>
+<parameter name="browser" value="1"/>
 	<test name="My first test">
 		<classes>
 			<class name="com.cuadrado.starbucks.Test.StarbucksTests"></class>
